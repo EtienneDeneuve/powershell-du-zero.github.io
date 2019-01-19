@@ -60,6 +60,9 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+# Do not publish future posts
+future: false
+
 # RSS
 RSS: true
 
