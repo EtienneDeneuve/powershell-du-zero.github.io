@@ -45,6 +45,6 @@ Venez partager votre savoir-faire sur :
 
 ## Envie de contribuer ?
 
-Envoyez-nous un petit mail à l'adresse suivante : contact@powershell-du-zero.fr
+Envoyez-nous un petit mail à l'adresse suivante : [contact@powershell-du-zero.fr](mailto:contact@powershell-du-zero.fr)
 
 ![ouverture-du-blog-02](/assets/img/ouverture-du-blog-02.gif)
