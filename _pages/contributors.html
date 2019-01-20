@@ -16,16 +16,18 @@ permalink: /contributors.html
     {% for contributor in site.data.contributors %}
     <li id="{{ contributor.name | replace: ' ', '-' | downcase }}">
       <section class="author-card">
-        <div class="avatar">
+        <div class="avatar-medium">
           <img src="{{ contributor.avatar }}" alt="{{ contributor.name }}">
         </div>
-        <p style="text-align:center;font-size:30px;font-family: 'SourceSansPro';font-weight: lighter;">
+        <p style="text-align:center;font-size:30px;font-family: 'SourceSansPro';font-weight: lighter;" class="author-name">
           {{ contributor.name }}
         </p>
         {% if contributor.description %}
-        <p style="text-align:center;font-size:15px;font-family: 'SourceSansPro','SourceHanSans';">
-          {{ contributor.description }}
-        </p>
+        <div class="bio">
+          <p style="text-align:center;font-size:15px;font-family: 'SourceSansPro','SourceHanSans';">
+            {{ contributor.description }}
+          </p>
+        </div>
         {% endif %}
         <p style="text-align:center;font-family: 'SourceSansPro';font-size:18px;">
           {% if contributor.social.email %}
