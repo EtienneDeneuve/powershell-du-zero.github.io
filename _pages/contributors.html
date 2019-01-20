@@ -29,17 +29,19 @@ permalink: /contributors.html
           </p>
         </div>
         {% endif %}
+
+        {% if contributor.social.size > 0 %}
         <p style="text-align:center;font-family: 'SourceSansPro';font-size:18px;">
-          {% if contributor.social.email %}
-          <a class="hover" href="mailto:{{ contributor.social.email }}"><i class="iconfont icon-email"></i></a>
-          {% endif %}
-          {% if contributor.social.github %}
-          <a class="hover" href="https://github.com/{{ contributor.social.github }}"><i class="iconfont icon-github"></i></a>
-          {% endif %}
-          {% if contributor.social.linkedin %}
-          <a class="hover" href="https://www.linkedin.com/in/{{ contributor.social.github }}"><i class="iconfont icon-linkedin"></i></a>
-          {% endif %}
+            {% for social in contributor.social %}
+                <a href="{{ social[1] }}" target="_blank">
+                    <i class="fab fa-{{ social[0] }}"></i>
+                </a>
+            {% endfor %}
         </p>
+        {% endif %}
+
+
+
       </section>
     </li>
     {% endfor %}

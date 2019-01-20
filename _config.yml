@@ -39,11 +39,17 @@ theme-color: 'default'
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
-# SNS settings
-# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, , medium, linkedin
-sns:
-  twitter: 'https://twitter.com/PowershellZ'
-  github: 'https://github.com/Powershell-du-Zero/'
+# Social settings
+social:
+  twitter:
+    icon: fab fa-twitter
+    link: https://twitter.com/PowershellZ
+  github:
+    icon: fab fa-github
+    link: https://github.com/Powershell-du-Zero
+  rss:
+    icon: fas fa-rss-square
+    link: /feed.xml
 
 # Tags
 recommend-tags: true # whether or not display recommend-tags on the sidebar

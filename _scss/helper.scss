@@ -109,7 +109,7 @@ $post-content-w: 720px;
         }
     }
 
-    .sns-links {
+    .social-links {
         margin-top: 14px;
         cursor: default;
         li {
@@ -121,11 +121,15 @@ $post-content-w: 720px;
             a {
                 display: inline-block;
             }
-            .iconfont {
+            .fab {
                 font-size: 22px;
                 line-height: 30px;
             }
-            @include snsIcon;
+            .fas {
+              font-size: 22px;
+              line-height: 30px;
+          }
+            @include socialIcon;
         }
     }
 }
@@ -149,63 +153,39 @@ $post-content-w: 720px;
     }
 }
 
-@mixin snsIcon {
-    .iconfont {
+@mixin socialIcon {
+    .fab {
         color: #B8BDC3;
         transition: .2s;
         &:hover {
             color: #7B848F;
         }
     }
-    .icon-weibo:hover {
-        color: #F85555;
-    }
-    .icon-zhihu:hover {
-        color: #1892F5;
-    }
-    .icon-twitter:hover {
+    .fas {
+      color: #B8BDC3;
+      transition: .2s;
+      &:hover {
+          color: #7B848F;
+      }
+  }
+    .fa-twitter:hover {
         color: #39A6F8;
     }
-    .icon-instagram:hover {
-        color: #D92580;
-    }
-    .icon-juejin:hover {
-        color: #1682FC;
-    }
-    .icon-douban:hover {
-        color: #2E963D;
-    }
-    .icon-github:hover {
+    .fa-github:hover {
         color: #575757;
     }
-    .icon-facebook:hover {
+    .fa-facebook:hover {
         color: #3D5A9A;
     }
-    .icon-dribbble:hover {
-        color: #F26798;
-    }
-    .icon-jianshu:hover {
-        color: #EA6F5A;
-    }
-    .icon-uicn:hover {
-        color: #3498DB;
-    }
-    .icon-linkedin:hover {
+    .fa-linkedin:hover {
         color: #3181BE;
     }
-    .icon-medium:hover {
-        color: #0BE370;
-    }
-    .icon-youtube:hover {
+    .fa-youtube:hover {
         color: #FF2600;
     }
-    .icon-behance:hover {
-        color: #0057ff;
+    .fa-rss-square:hover {
+      color: #f26522;
     }
-    .icon-vk:hover {
-        color: #5181b8;
-    }
-
 }
 
 @mixin postHeaderPattern($shape) {

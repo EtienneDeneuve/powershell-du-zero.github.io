@@ -18,14 +18,16 @@
       <h1>{{ page.title }}</h1>
       <div class="post-meta">
         {% if page.author %}
-        <span class="post-meta-item"><i class="iconfont icon-author"></i>
-          {% for author in page.author %}<a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{ author }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+        <span class="post-meta-item"><i class="far fa-user-circle"></i>
+          {% for author in page.author %}<a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{
+            author }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
         </span>
         {% else %}
-        <span class="post-meta-item"><i class="iconfont icon-author"></i>{{ site.author }}</span>
+        <span class="post-meta-item"><i class="far fa-user-circle"></i>{{ site.author }}</span>
         {% endif %}
-        <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{
-          page.date | date_to_string }}</time>
+        <span class="post-meta-item"><i class="far fa-clock"></i>
+          <time datetime="{{ page.date | date:"%y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+        </span>
       </div>
     </div>
     {% if page.cover %}
@@ -54,12 +56,12 @@
       <div class="bio">
         <p>{{ site.bio }}</p>
       </div>
-      {% if site.sns.size > 0 %}
-      <ul class="sns-links">
-        {% for s in site.sns %}
+      {% if site.social.size > 0 %}
+      <ul id="social-links" class="social-links">
+        {% for social in site.social %}
         <li>
-          <a href="{{ s[1] }}" target="_blank">
-            <i class="iconfont icon-{{ s[0] }}"></i>
+          <a href="{{ social[1].link }}" target="_blank">
+            <i class="{{ social[1].icon }}"></i>
           </a>
         </li>
         {% endfor %}
