@@ -1,0 +1,48 @@
+---
+title: Contributeurs
+layout: default
+permalink: /contributors.html
+---
+
+{% include header.html %}
+
+<div class="g-banner pages-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}"
+  data-theme="{{ site.theme-color }}">
+  <h2>Contributeurs</h2>
+</div>
+
+<main class="pages-content">
+  <ul class="pages-list">
+    {% for contributor in site.data.contributors %}
+    <li id="{{ contributor.name | replace: ' ', '-' | downcase }}">
+      <section class="author-card">
+        <div class="avatar">
+          <img src="{{ contributor.avatar }}" alt="{{ contributor.name }}">
+        </div>
+        <p style="text-align:center;font-size:30px;font-family: 'SourceSansPro';font-weight: lighter;">
+          {{ contributor.name }}
+        </p>
+        {% if contributor.description %}
+        <p style="text-align:center;font-size:15px;font-family: 'SourceSansPro','SourceHanSans';">
+          {{ contributor.description }}
+        </p>
+        {% endif %}
+        <p style="text-align:center;font-family: 'SourceSansPro';font-size:18px;">
+          {% if contributor.social.email %}
+          <a class="hover" href="mailto:{{ contributor.social.email }}"><i class="iconfont icon-email"></i></a>
+          {% endif %}
+          {% if contributor.social.github %}
+          <a class="hover" href="https://github.com/{{ contributor.social.github }}"><i class="iconfont icon-github"></i></a>
+          {% endif %}
+          {% if contributor.social.linkedin %}
+          <a class="hover" href="https://www.linkedin.com/in/{{ contributor.social.github }}"><i class="iconfont icon-linkedin"></i></a>
+          {% endif %}
+        </p>
+      </section>
+    </li>
+    {% endfor %}
+  </ul>
+
+</main>
+
+{% include footer.html %}

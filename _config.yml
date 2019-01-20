@@ -10,6 +10,7 @@ baseurl: ''
 # Navigation links
 nav:
   accueil: '/'
+  contributeurs: '/contributors.html'
   tags: '/tags.html'
 
 # Footer

@@ -1,0 +1,13 @@
+- name: Thomas ILLIET
+  avatar: /assets/img/avatar-thomas-illiet.jpg
+  description: ''
+  social:
+    github: thomas-illiet
+    linkedin: thomas-illiet
+
+- name: Etienne Deneuve
+  avatar: /assets/img/avatar-etienne-deneuve.jpg
+  description: ''
+  social:
+    github: EtienneDeneuve
+    linkedin: etiennedeneuve
