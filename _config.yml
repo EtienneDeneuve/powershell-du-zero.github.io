@@ -73,5 +73,10 @@ RSS: true
 # Permalink
 permalink: /:year/:month/:day/:title.html
 
+# Assets Settings
+sass:
+  sass_dir: _scss
+  style: :compressed
+
 # Plugins
 plugins: ['jekyll-paginate', 'jekyll-sitemap']
