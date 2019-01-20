@@ -47,6 +47,9 @@ social:
   github:
     icon: fab fa-github
     link: https://github.com/Powershell-du-Zero
+  meetup:
+    icon: fab fa-meetup
+    link: https://www.meetup.com/fr-FR/Powershell-du-Zero/
   rss:
     icon: fas fa-rss-square
     link: /feed.xml
