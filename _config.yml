@@ -50,6 +50,9 @@ social:
   meetup:
     icon: fab fa-meetup
     link: https://www.meetup.com/fr-FR/Powershell-du-Zero/
+  youtube:
+    icon: fab fa-youtube
+    link: https://www.youtube.com/channel/UCdXqTskG5VbQqNk42xtg9qQ
   rss:
     icon: fas fa-rss-square
     link: /feed.xml
