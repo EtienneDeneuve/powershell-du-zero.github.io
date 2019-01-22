@@ -3,7 +3,7 @@ layout: post
 title: Gérer les stratégies d’exécution
 date: 2019-01-20
 author: Thomas ILLIET
-cover: '/assets/img/gerer-les-strategies-dexecution-06.png'
+post-cover: '/assets/img/gerer-les-strategies-dexecution-06.png'
 tags: powershell security gpo
 ---
 
