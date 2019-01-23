@@ -1,8 +1,8 @@
 # Site settings
 title: 'Powershell du Zero'
 description: 'Le site où tout est expliqué... à partir de Zéro !'
-keyword: ''
-url: ''
+keyword: 'powershell, microsoft, meetup, blog'
+url: 'https://powershell-du-zero.fr'
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: ''
