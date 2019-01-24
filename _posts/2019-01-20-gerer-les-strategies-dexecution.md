@@ -4,7 +4,7 @@ title: Gérer les stratégies d’exécution
 date: 2019-01-20
 author: Thomas ILLIET
 post-cover: '/assets/img/gerer-les-strategies-dexecution-06.png'
-tags: powershell security gpo
+tags: powershell securite gpo
 ---
 
 Comme vous le savez sûrement, PowerShell dispose de certaines protections contre l’utilisation des scripts. Pour commencer, par défaut l’extension ".ps1" est associée a Notepad, afin de prévenir les utilisateurs d’une utilisation d’un script par simple double clic.
