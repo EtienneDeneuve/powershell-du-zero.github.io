@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 'Meetup Powershell du Zéro $001'
+title: 'Meetup Powershell du Zéro #001'
 date: 2019-01-21
 author: Etienne DENEUVE
 post-cover: '/assets/img/meetup-001.png'
 tags: powershell meetup
+redirect_from: /2019/01/21/meetup.html
 ---
 
 Le premier meetup aura lieu le 23 Janvier à 20h, sur Skype.
