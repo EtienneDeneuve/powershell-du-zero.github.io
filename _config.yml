@@ -25,9 +25,6 @@ avatar: '/assets/img/profile.png'
 # Search
 search: true
 
-# Night mode
-nightMode: false
-
 # Comments
 comments:
   disqus: true
