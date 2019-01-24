@@ -50,6 +50,15 @@ social:
   youtube:
     icon: fab fa-youtube
     link: https://www.youtube.com/channel/UCdj-wRUwka5oloALBYjJp7g
+  twitch:
+    icon: fab fa-twitch
+    link: https://www.twitch.tv/powershellduzero
+  facebook:
+    icon: fab fa-facebook
+    link: https://www.facebook.com/Powershell-Du-Zero-393139121263087
+  linkedin:
+    icon: fab fa-linkedin
+    link: https://www.linkedin.com/company/powershell-du-zero/
   rss:
     icon: fas fa-rss-square
     link: /feed.xml
