@@ -3,131 +3,132 @@
 {% include post-head.html %}
 
 <body>
-  {% include header.html %}
+    {% include header.html %}
 
-  <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
-    data-theme="{{ site.theme-color }}">
-    <div class="post-wrapper">
-      <div class="post-tags">
-        {% if page.tags.size > 0 %}
-        {% for tag in page.tags %}
-        <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
-        {% endfor %}
+    <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
+        data-theme="{{ site.theme-color }}">
+        <div class="post-wrapper">
+            <div class="post-tags">
+                {% if page.tags.size > 0 %}
+                {% for tag in page.tags %}
+                <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+            <div class="post-meta">
+                {% if page.author %}
+                <span class="post-meta-item"><i class="far fa-user-circle"></i>
+                    {% for author in page.author %}
+                    <a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{ author }}</a>
+                    {% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                </span>
+                {% else %}
+                <span class="post-meta-item"><i class="far fa-user-circle"></i>{{ site.author }}</span>
+                {% endif %}
+                <span class="post-meta-item"><i class="far fa-clock"></i>
+                    <time datetime="{{ page.date | date:"%y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                </span>
+            </div>
+        </div>
+        {% if page.post-cover %}
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('{{ page.post-cover }}') center no-repeat; background-size: cover;"></div>
         {% endif %}
-      </div>
-      <h1>{{ page.title }}</h1>
-      <div class="post-meta">
-        {% if page.author %}
-        <span class="post-meta-item"><i class="far fa-user-circle"></i>
-          {% for author in page.author %}<a href="{{ "contributors.html#" | append: author | replace: ' ', '-' | downcase | absolute_url }}">{{
-            author }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
-        </span>
-        {% else %}
-        <span class="post-meta-item"><i class="far fa-user-circle"></i>{{ site.author }}</span>
+    </header>
+
+    <div class="post-content visible">
+        {% if page.subtitle %}
+        <h2 class="post-subtitle">{{ page.subtitle }}</h2>
         {% endif %}
-        <span class="post-meta-item"><i class="far fa-clock"></i>
-          <time datetime="{{ page.date | date:"%y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-        </span>
-      </div>
+        <article class="markdown-body">
+            {{ page.content }}
+        </article>
     </div>
-    {% if page.post-cover %}
-    <div class="filter"></div>
-    <div class="post-cover" style="background: url('{{ page.post-cover }}') center no-repeat; background-size: cover;"></div>
-    {% endif %}
-  </header>
 
-  <div class="post-content visible">
-    {% if page.subtitle %}
-    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-    {% endif %}
-
-    <article class="markdown-body">
-      {{ page.content }}
-    </article>
-
-  </div>
-
-  <section class="author-detail">
-    <section class="post-footer-item author-card">
-      <div class="avatar">
-        <img src="{{ site.avatar | absolute_url }}" alt="">
-      </div>
-      <div class="author-name" rel="author">{{ site.author }}</div>
-      <div class="bio">
-        <p>{{ site.bio }}</p>
-      </div>
-      {% if site.social.size > 0 %}
-      <ul id="social-links" class="social-links">
-        {% for social in site.social %}
-        <li>
-          <a href="{{ social[1].link }}" target="_blank">
-            <i class="{{ social[1].icon }}"></i>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </section>
-    <section class="post-footer-item read-next">
-      {% if page.next.url %}
-      <div class="read-next-item">
-        <a href="{{ page.next.url }}" class="read-next-link"></a>
-        <section>
-          <span>{{ page.next.title }}</span>
-          <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+    <section class="author-detail">
+        <section class="post-footer-item author-card">
+            <div class="avatar">
+                <img src="{{ site.avatar | absolute_url }}" alt="">
+            </div>
+            <div class="author-name" rel="author">{{ site.author }}</div>
+            <div class="bio">
+                <p>{{ site.bio }}</p>
+            </div>
+            {% if site.social.size > 0 %}
+            <ul id="social-links" class="social-links">
+                {% for social in site.social %}
+                <li>
+                    <a href="{{ social[1].link }}" target="_blank">
+                        <i class="{{ social[1].icon }}"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </section>
-        {% if page.next.cover %}
-        <div class="filter"></div>
-        <img src="{{ page.next.cover }}" alt="">
-        {% endif %}
-      </div>
-      {% endif %}
+        <section class="post-footer-item read-next">
+            {% if page.next.url %}
+            <div class="read-next-item">
+                <a href="{{ page.next.url }}" class="read-next-link"></a>
+                <section>
+                    <span>{{ page.next.title }}</span>
+                    <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+                </section>
+                {% if page.next.cover %}
+                <div class="filter"></div>
+                <img src="{{ page.next.cover }}" alt="">
+                {% endif %}
+            </div>
+            {% endif %}
 
-      {% if page.previous.url %}
-      <div class="read-next-item">
-        <a href="{{ page.previous.url }}" class="read-next-link"></a>
-        <section>
-          <span>{{ page.previous.title }}</span>
-          <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            {% if page.previous.url %}
+            <div class="read-next-item">
+                <a href="{{ page.previous.url }}" class="read-next-link"></a>
+                <section>
+                    <span>{{ page.previous.title }}</span>
+                    <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+                </section>
+                {% if page.previous.cover %}
+                <div class="filter"></div>
+                <img src="{{ page.previous.cover }}" alt="">
+                {% endif %}
+            </div>
+            {% endif %}
         </section>
-        {% if page.previous.cover %}
-        <div class="filter"></div>
-        <img src="{{ page.previous.cover }}" alt="">
+        {% if site.comments.disqus %}
+        <section class="post-footer-item comment">
+            <div id="disqus_thread"></div>
+        </section>
         {% endif %}
-      </div>
-      {% endif %}
     </section>
+
+    {% include footer.html %}
+
     {% if site.comments.disqus %}
-    <section class="post-footer-item comment">
-      <div id="disqus_thread"></div>
-    </section>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '{{ site.comments.disqus_url }}';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
     {% endif %}
-  </section>
 
-  {% include footer.html %}
-
-  {% if site.comments.disqus %}
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function () { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '{{ site.comments.disqus_url }}';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  {% endif %}
-
-  <script src="/assets/js/prism.js"></script>
-  <script src="/assets/js/index.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.min.js"></script>
 </body>
 
 </html>
