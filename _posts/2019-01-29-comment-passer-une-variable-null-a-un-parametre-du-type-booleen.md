@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Passer une variable $Null à un paramètre du type Boolean'
-description: 'Rencontre du 3ème type de Boolean'
+title: Passer une variable $Null à un paramètre du type Boolean
+description: Rencontre du 3ème type de Boolean
 date: 2019-01-29
 author: Thomas ILLIET
-post-cover: '/assets/img/banner/tips-tricks-cover.png'
-preview-cover: '/assets/img/banner/tips-tricks-preview.png'
+post-cover: /assets/img/banner/tips-tricks-cover.png
+preview-cover: /assets/img/banner/tips-tricks-preview.png
 tags: powershell fonction type parametre
 ---
 

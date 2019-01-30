@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Meetup Powershell du Zéro #002'
-description: 'Let's meet us'
+title: "Meetup Powershell du Zéro #002"
+description: Let's meet us
 date: 2019-01-29
 author: Etienne DENEUVE
-post-cover: '/assets/img/banner/meetup-cover.png'
-preview-cover: '/assets/img/banner/meetup-preview.png'
+post-cover: /assets/img/banner/meetup-cover.png
+preview-cover: /assets/img/banner/meetup-preview.png
 tags: powershell meetup
 ---
 Le deuxième meetup aura lieu le 6 Janvier à 20h, en ligne et en Streaming depuis Youtube.

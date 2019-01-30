@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Ouverture du blog'
+title: Ouverture du blog
 date: 2019-01-19
 author: Thomas ILLIET
-post-cover: '/assets/img/ouverture-du-blog-01.png'
+post-cover: /assets/img/ouverture-du-blog-01.png
 tags: communication
 ---
 
