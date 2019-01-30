@@ -7,7 +7,6 @@ author: Etienne DENEUVE
 post-cover: '/assets/img/banner/meetup-cover.png'
 preview-cover: '/assets/img/banner/meetup-preview.png'
 tags: powershell meetup
-redirect_from: /2019/01/29/meetup.html
 ---
 Le deuxième meetup aura lieu le 6 Janvier à 20h, en ligne et en Streaming depuis Youtube.
 
