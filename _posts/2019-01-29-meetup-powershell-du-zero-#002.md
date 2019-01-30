@@ -8,7 +8,7 @@ post-cover: /assets/img/banner/meetup-cover.png
 preview-cover: /assets/img/banner/meetup-preview.png
 tags: powershell meetup
 ---
-Le deuxième meetup aura lieu le 6 Janvier à 20h, en ligne et en Streaming depuis Youtube.
+Le deuxième meetup aura lieu le 6 Février à 20h, en ligne et en Streaming depuis Youtube.
 
 Il reste encore quelques places de disponibles (mais plus beaucoup !), inscrivez-vous vite ici : [Meetup](https://www.meetup.com/fr-FR/Powershell-du-Zero/events/258067278/)
 
