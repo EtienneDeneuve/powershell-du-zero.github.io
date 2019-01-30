@@ -24,4 +24,4 @@ Et si vous ne nous suivez pas encore sur [Facebook](https://www.facebook.com/Pow
 
 Le live sera disponible sur la chaîne YouTube : [Chaîne Youtube](https://www.youtube.com/channel/UCdj-wRUwka5oloALBYjJp7g).
 
-<iframe width="100%" height="385" src="https://www.youtube.com/embed/4IF3YlK8To0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allocentrique></iframe>
+<iframe width="100%" height="385" src="https://www.youtube.com/embed/LsATtPkbGVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allocentrique></iframe>
