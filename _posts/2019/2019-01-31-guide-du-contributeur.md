@@ -8,8 +8,8 @@ preview-cover: ''
 tags: communication
 ---
 
-Avant de contribuer sur le blog du Powershell du Zéro, nous devons clarifier quelques prérequis en termes d'outils, de compétences, etc..
-Afin de rendre votre participation aussi plaisante que possible.
+Avant de contribuer sur le blog du Powershell du Zéro, nous devons clarifier les prérequis en terme d'outillage, de compétences, et de gouvernance.
+Ce dans le but de rendre toutes les contributions agréables et rapide !
 
 # Pré-requis
 
@@ -26,13 +26,15 @@ Pour contribuer sur le bog du [Powershell du Zéro](https://powershell-du-zero.f
 Ce point important mérite d'être clarifié rapidement.
 Il n'y a absolument aucun niveau de compétence minimum requis pour contribuer sur le Powershell du Zéro.
 
+Toutes les contributions seront relues et étudier et corrigé par le biais des outils de review de GitHub. **Lancez-vous !**
+
 # Monter son environnement
 
 Dans cette section nous allons voir comment mettre en place le dépôt (le code) et les dépendances.
 
 ## Dépôt
 
-Nous hébergeons nos dépôts Git chez [Github](https://github.com/) a l'adresse suivante : [https://github.com/Powershell-du-Zero](https://github.com/Powershell-du-Zero)
+Nous hébergeons nos dépôts Git sur [Github](https://github.com/) à l'adresse suivante : [https://github.com/Powershell-du-Zero](https://github.com/Powershell-du-Zero)
 
 Bien sûr, vous n'allez pas travailler directement sur le dépôt du Powershell du Zero parce que vous n'avez pas les permissions et c'est une mauvaise pratique. Vous devez doc **forker le dépôt**.
 Un fork est copie du dépôt, permettant de faire ce que bon vous semble sans aucune restriction.
@@ -97,12 +99,11 @@ Code est basé sur le même socle technique qu’Atom, mais la similitude s’ar
 
 ## Extensions recommandées
 
-Tu peux facilement obtenir la liste et installer manuellement juste en récupérant le dépôt du [Powershell du Zéro](https://powershell-du-zero.fr/) et en l’ouvrant dans VS Code : il te signalera que le dépôt propose des extensions et te proposera d’ouvrir la liste pour choisir les installations qui te conviennent.
+Vous pouvez facilement obtenir la liste et installer manuellement juste en récupérant le dépôt du [Powershell du Zéro](https://powershell-du-zero.fr/) et en l’ouvrant dans VS Code : il te signalera que le dépôt propose des extensions et te proposera d’ouvrir la liste pour choisir les installations qui te conviennent.
 
 | Extension / ID                                                                 | Description rapide                                                                                                             |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| Bracket Pair Colorizer / ```coenraads.bracket-pair-colorizer```                | n/a                                                                                                                            |
-| EditorConfig for VS Code / ```editorconfig.editorconfig```                     | n/a                                                                                                                            |
+| Bracket Pair Colorizer / ```coenraads.bracket-pair-colorizer```                | Cette extension permet d’identifier facilement les bracket avec des couleurs                                                  |
 | Markdown All in One / ```yzhang.markdown-all-in-one```                         | Linter dédié à Markdown, qui repère les erreurs et risques courants et vérifie aussi la sémantique et la structure du document |
 | vscode-icons / ```robertohuertasm.vscode-icons```                              | Un thème d’icônes nettement plus détaillé                                                                                     |
 | Markdown Preview Github Styling / ```bierner.markdown-preview-github-styles``` | Un thème de prévisuliation permettant d'avoir le même thème que sur Github                                                     |
@@ -110,6 +111,8 @@ Tu peux facilement obtenir la liste et installer manuellement juste en récupér
 ## Paramétrage recommandé
 
 Les codebases que nous fournissons comme socle de travail sont équipées de réglages de projet (workspace settings) adaptés, qui ont priorité sur vos réglages génériques. Ces réglages sont présents dans le fichier ```.vscode/settings.json```
+
+Vous pouvez tout a fait proposer des adaptations du workspace, via une pull request dédiée.
 
 ## La doc en ligne
 
@@ -153,9 +156,11 @@ De nombreux outils avertissent d’ailleurs lorsque l’on dépasse la longueur 
 
 Pour adopter un style descriptif efficace, on utilise l’impératif présent : add, change, update, remove et non pas changed, removed, etc..
 
+> Veuillez notez que le sujet doit etre toujours en anglais !
+
 ## Le corps du message
 
-Beaucoup l’ignorent, mais les messages peuvent comporter un corps dans lequel on peut expliquer plus en détail la raison des changements.
+Beaucoup l’ignorent, mais les messages peuvent comporter un corps en markdown (pour le formatage :)) dans lequel on peut expliquer plus en détail la raison des changements.
 De même que pour le sujet, on utilisera l’impératif présent.
 
 # Créer des articles
