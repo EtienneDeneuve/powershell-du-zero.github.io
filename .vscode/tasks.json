@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "label": "StartContainer",
+      "type": "shell",
+      "command": "docker run --name mywebsite -p 8080:80 -v ${workspaceFolder}\\_site:/usr/local/apache2/htdocs/   httpd:2.4-alpine",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+  ]
+}
