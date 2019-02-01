@@ -1,6 +1,8 @@
 {
   "recommendations": [
-    "DavidAnson.vscode-markdownlint",
-    "editorconfig.editorconfig"
+    "coenraads.bracket-pair-colorizer",
+    "robertohuertasm.vscode-icons",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-preview-github-styles",
   ]
 }
