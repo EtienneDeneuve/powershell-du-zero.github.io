@@ -4,30 +4,27 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "StartContainer",
+      "label": "Docker - Serve",
       "type": "shell",
-      "command": "docker run --name mywebsite -p 8080:80 -v ${workspaceFolder}\\_site:/usr/local/apache2/htdocs/   httpd:2.4-alpine",
+      "command": "docker-compose -f 'Docker-compose.yml' up",
       "group": {
         "kind": "test",
         "isDefault": true
       },
-      "problemMatcher": []
     },
     {
-      "label": "Serve",
+      "label": "Local - Serve",
       "type": "shell",
-      "command": "jekyll serve",
+      "command": "bundle exec jekyll serve",
       "group": {
         "kind": "test",
         "isDefault": true
-      },
-      "isBackground": true
+      }
     },
     {
-      "label": "Build",
+      "label": "Local - Build",
       "type": "shell",
-      "command": "jekyll build",
-      "group": "build",
+      "command": "bundle exec jekyll build",
       "group": {
         "kind": "build",
         "isDefault": true
