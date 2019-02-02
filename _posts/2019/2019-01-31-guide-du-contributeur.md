@@ -13,10 +13,13 @@ Ce dans le but de rendre toutes les contributions agréables et rapide !
 
 # Pré-requis
 
+![guide-du-contributeur11](/assets/img/post/2019/guide-du-contributeur11.png)
+
 ## Outils
 
 Pour contribuer sur le bog du [Powershell du Zéro](https://powershell-du-zero.fr/), les outils suivants sont requis :
 
+- [Docker](https://docs.docker.com/docker-for-windows/install/)
 - [Ruby](https://rubyinstaller.org/)
 - [Git](https://git-scm.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -26,9 +29,13 @@ Pour contribuer sur le bog du [Powershell du Zéro](https://powershell-du-zero.f
 Ce point important mérite d'être clarifié rapidement.
 Il n'y a absolument aucun niveau de compétence minimum requis pour contribuer sur le Powershell du Zéro.
 
-Toutes les contributions seront relues et étudier et corrigé par le biais des outils de review de GitHub. **Lancez-vous !**
+Toutes les contributions seront relues, étudier et corrigé par le biais des outils de review de GitHub.
+
+**Lancez-vous !**
 
 # Monter son environnement
+
+![guide-du-contributeur12](/assets/img/post/2019/guide-du-contributeur12.png)
 
 Dans cette section nous allons voir comment mettre en place le dépôt (le code) et les dépendances.
 
@@ -38,7 +45,7 @@ Nous hébergeons nos dépôts Git sur [Github](https://github.com/) à l'adresse
 
 Bien sûr, vous n'allez pas travailler directement sur le dépôt du Powershell du Zero parce que vous n'avez pas les permissions et c'est une mauvaise pratique. Vous devez doc **forker le dépôt**.
 Un fork est copie du dépôt, permettant de faire ce que bon vous semble sans aucune restriction.
-Pour forker un dépôt je ous pouvez utiliser l'interface de Github :
+Pour forker un dépôt vous pouvez utiliser l'interface de Github :
 
 ![guide-du-contributeur01](/assets/img/post/2019/guide-du-contributeur01.png)
 
@@ -48,13 +55,23 @@ Une fois que vous avez fork le projet, Github vous redirigera vers la copie de c
 
 ## Dépendances
 
-### Ruby
+Dans cette section nous allons voir comment mettre en place les dépendances afin de pour crée une version local du blog sur votre ordinateur. Vous aurez le choix entre une installation Manuelle ou via Docker.
+
+### Docker
+
+Nous recommandons **fortement** l'utilisation de docker pour effectuer le Lancement d'une version Local du blog. L'installation est vraiment très simple, il vous sufit juste de télécharger [docker pour windows](https://docs.docker.com/docker-for-windows/install/) et de l'installer sur votre ordinateur.
+
+> Cette solution vous evitera d'avoir des problèmes avec les diférentes dépendances de Ruby.
+
+### Manuelle
+
+#### Ruby
 
 Le moyen le plus simple d'installer Jekyll consiste à utiliser [RubyInstaller](https://rubyinstaller.org/) pour Windows.
 
-### Jekyll
+#### Jekyll
 
-Ouvrez une nouvelle fenêtre d'invite de commande à partir du menu démarrer, de sorte que les modifications apportées à la variable d'environnement PATH prennent effet.
+Ouvrez une nouvelle fenêtre d'invite de commande à partir du menu démarrer, de sorte que les modifications apportées à la variable d'environnement ```PATH``` prennent effet.
 
 Installez Jekyll et Bundler via la commande suivante :
 
@@ -62,10 +79,10 @@ Installez Jekyll et Bundler via la commande suivante :
 gem install jekyll bundler
 ```
 
-Pour vérifiez si Jekyll est installé correctement:
+Pour vérifiez si Jekyll est installé correctement tapez la commande suivante :
 
 ```bash
-jekyll -v
+bundle exec jekyll -v
 ```
 
 ### Lancer une version Local du blog
@@ -73,17 +90,27 @@ jekyll -v
 Jekyll embarque le serveur [WEBrick](https://fr.wikipedia.org/wiki/WEBrick), il est donc possible de voir directement le blog grâce à la commande serve.
 Cette commande va générer le blog et créer les fichiers statiques correspondants.
 
+#### Manuelle
+
 ```bash
-jekyll serve
+bundle exec jekyll serve
 ```
 
-Il maintenant possible de voir le blog dans un navigateur à cette adresse : **http://localhost:4000**
+#### Docker
+
+```bash
+docker-compose -f 'Docker-compose.yml' up
+```
+
+Il maintenant possible de voir le blog dans un navigateur à l'adresse suivante : **http://localhost:4000**
 
 # Visual Studio Code
 
+![guide-du-contributeur09](/assets/img/post/2019/guide-du-contributeur09.png)
+
 ## Les principaux avantages de Code
 
-Code est basé sur le même socle technique qu’Atom, mais la similitude s’arrête là…
+Code est basé sur le même socle technique qu’[Atom](https://atom.io/), mais la similitude s’arrête là…
 
 - **Rapide** à lancer
 - **Très rapide** à l’usage
@@ -99,7 +126,7 @@ Code est basé sur le même socle technique qu’Atom, mais la similitude s’ar
 
 ## Extensions recommandées
 
-Vous pouvez facilement obtenir la liste et installer manuellement juste en récupérant le dépôt du [Powershell du Zéro](https://powershell-du-zero.fr/) et en l’ouvrant dans VS Code : il te signalera que le dépôt propose des extensions et te proposera d’ouvrir la liste pour choisir les installations qui te conviennent.
+Vous pouvez facilement obtenir la liste et installer manuellement les extensions recommandées juste en récupérant le dépôt du [Powershell du Zéro](https://powershell-du-zero.fr/) et en l’ouvrant dans VS Code : il vous signalera que le dépôt propose des extensions et vous proposera d’ouvrir la liste pour choisir les installations qui vous conviennent.
 
 | Extension / ID                                                                 | Description rapide                                                                                                             |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -110,7 +137,7 @@ Vous pouvez facilement obtenir la liste et installer manuellement juste en récu
 
 ## Paramétrage recommandé
 
-Les codebases que nous fournissons comme socle de travail sont équipées de réglages de projet (workspace settings) adaptés, qui ont priorité sur vos réglages génériques. Ces réglages sont présents dans le fichier ```.vscode/settings.json```
+Les codebases que nous fournissons comme socle de travail sont équipées de réglages de projet (workspace settings) adaptés, qui ont priorité sur vos réglages génériques. Ces réglages sont présents dans le fichier ```.vscode/settings.json```.
 
 Vous pouvez tout a fait proposer des adaptations du workspace, via une pull request dédiée.
 
@@ -121,7 +148,25 @@ Les [docs officielles](https://code.visualstudio.com/docs) regorgent de trucs ut
 - [Getting started](https://code.visualstudio.com/docs), qui reprend des contenus cités plus haut, mais en ajoute plein d’autres (thèmes, changement de la langue de l’éditeur, etc.)
 - [User guide](https://code.visualstudio.com/docs/editor/codebasics), qui reprend pas à pas les points forts de Code, démos et illustrations à l’appui. On y trouve notamment des sujets avancés commes les multi-root workspaces.
 
+## Les tâches
+
+Code intègre une gestion d'éxécution de tache, qui permet d'effectuer rapidement des actions que nous avons préalablement configurer. Ces réglages sont présents dans le fichier ```.vscode/tasks.json```.
+
+Donc afin d'ouvir le menu de recherche presser simultanement les touches ```CTRL``` + ```MAJ``` + ```P```, écrivez ensuite task afin de trouver "Tasks: Run Task"
+
+![guide-du-contributeur05](/assets/img/post/2019/guide-du-contributeur05.png)
+
+Code vous porpose maintenant une liste de tache a éxécuter
+
+![guide-du-contributeur06](/assets/img/post/2019/guide-du-contributeur06.png)
+
+Dans l'exemple d'éxécution ci-dessous, nous avons lancer la tache "Docker - Serve".
+
+![guide-du-contributeur07](/assets/img/post/2019/guide-du-contributeur07.png)
+
 # Le commit parfait
+
+![guide-du-contributeur08](/assets/img/post/2019/guide-du-contributeur08.png)
 
 Un bon message de commit doit permettre de savoir ce qui a changé et pourquoi.
 Le comment c’est-à-dire la manière d’effectuer ces changements n’a pas à être expliqué.
@@ -164,6 +209,8 @@ Beaucoup l’ignorent, mais les messages peuvent comporter un corps en markdown 
 De même que pour le sujet, on utilisera l’impératif présent.
 
 # Créer des articles
+
+![guide-du-contributeur10](/assets/img/post/2019/guide-du-contributeur10.png)
 
 ## Structure et organisation
 
