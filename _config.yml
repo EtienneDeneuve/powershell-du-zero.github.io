@@ -1,5 +1,6 @@
 # Site settings
 title: 'Powershell du Zero'
+shortname: PDZ
 description: 'Le site où tout est expliqué... à partir de Zéro !'
 keyword: 'powershell, microsoft, meetup, blog'
 url: 'https://powershell-du-zero.fr'
