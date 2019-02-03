@@ -8,8 +8,8 @@ preview-cover: /assets/img/post/2019/guide-du-contributeur14.png
 tags: communication
 ---
 
-Avant de contribuer sur le blog du Powershell du Zéro, nous devons clarifier les prérequis en terme d'outillage, de compétences, et de gouvernance.
-Ce dans le but de rendre toutes les contributions agréables et rapide !
+Avant de contribuer sur le blog du Powershell du Zéro, nous devons clarifier les prérequis en termes d'outillage, de compétences, et de gouvernance.
+Ce dans le but de rendre toutes les contributions agréables et rapides !
 
 # Pré-requis
 
@@ -29,7 +29,7 @@ Pour contribuer sur le bog du [Powershell du Zéro](https://powershell-du-zero.f
 Ce point important mérite d'être clarifié rapidement.
 Il n'y a absolument aucun niveau de compétence minimum requis pour contribuer sur le Powershell du Zéro.
 
-Toutes les contributions seront relues, étudier et corrigé par le biais des outils de review de GitHub.
+Toutes les contributions seront relues, étudiées et corrigées par le biais des outils de review de GitHub.
 
 **Lancez-vous !**
 
@@ -43,10 +43,10 @@ Dans cette section nous allons voir comment mettre en place le dépôt (le code)
 
 Nous hébergeons nos dépôts Git sur [Github](https://github.com/) à l'adresse suivante : [https://github.com/Powershell-du-Zero](https://github.com/Powershell-du-Zero)
 
-Travailler sur le dépot du Powershell du Zero n'est pas faisable, il faudrait mettre trop de contributeur et poserait des problemes de sécurité et de gouverannce. Pour proposez votre article, vous devez donc faire un **fork du dépot**.
+Travailler sur le dépot du Powershell du Zero n'est pas faisable, il faudrait mettre trop de contributeurs et poserait des problèmes de sécurité et de gouvernance. Pour proposer votre article, vous devez donc faire un **fork du dépot**.
 
 Un fork est copie du dépôt, permettant de faire ce que bon vous semble sans aucune restriction.
-Pour forker un dépôt vous pouvez utiliser l'interface de Github :
+Pour forker un dépôt, vous pouvez utiliser l'interface de Github :
 
 ![guide-du-contributeur01](/assets/img/post/2019/guide-du-contributeur01.png)
 
@@ -60,9 +60,9 @@ Dans cette section nous allons voir comment mettre en place les dépendances afi
 
 ### Docker
 
-Nous recommandons **fortement** l'utilisation de docker pour effectuer le Lancement d'une version Local du blog. L'installation est vraiment très simple, il vous sufit juste de télécharger [docker pour windows](https://docs.docker.com/docker-for-windows/install/) et de l'installer sur votre ordinateur.
+Nous recommandons **fortement** l'utilisation de docker pour effectuer le Lancement d'une version Local du blog. L'installation est vraiment très simple, il vous suffit juste de télécharger [docker pour windows](https://docs.docker.com/docker-for-windows/install/) et de l'installer sur votre ordinateur.
 
-> Cette solution vous evitera d'avoir des problèmes avec les diférentes dépendances de Ruby.
+> Cette solution vous évitera d'avoir des problèmes avec les différentes dépendances de Ruby.
 
 ### Manuelle
 
@@ -80,7 +80,7 @@ Installez Jekyll et Bundler via la commande suivante :
 gem install jekyll bundler
 ```
 
-Pour vérifiez si Jekyll est installé correctement tapez la commande suivante :
+Pour vérifier si Jekyll est installé correctement, tapez la commande suivante :
 
 ```bash
 bundle exec jekyll -v
@@ -140,7 +140,7 @@ Vous pouvez facilement obtenir la liste et installer manuellement les extensions
 
 Les codebases que nous fournissons comme socle de travail sont équipées de réglages de projet (workspace settings) adaptés, qui ont priorité sur vos réglages génériques. Ces réglages sont présents dans le fichier ```.vscode/settings.json```.
 
-Vous pouvez tout a fait proposer des adaptations du workspace, via une pull request dédiée.
+Vous pouvez tout à fait proposer des adaptations du workspace, via une pull request dédiée.
 
 ## La doc en ligne
 
@@ -151,17 +151,17 @@ Les [docs officielles](https://code.visualstudio.com/docs) regorgent de trucs ut
 
 ## Les tâches
 
-Code intègre une gestion d'éxécution de tache, qui permet d'effectuer rapidement des actions que nous avons préalablement configurer. Ces réglages sont présents dans le fichier ```.vscode/tasks.json```.
+Code intègre une gestion d'exécution de tâche, qui permet d'effectuer rapidement des actions que nous avons préalablement configurées. Ces réglages sont présents dans le fichier ```.vscode/tasks.json```.
 
-Donc afin d'ouvir le menu de recherche presser simultanement les touches ```CTRL``` + ```MAJ``` + ```P```, écrivez ensuite task afin de trouver "Tasks: Run Task"
+Donc afin d'ouvrir le menu de recherche presser simultanément les touches ```CTRL``` + ```MAJ``` + ```P```, écrivez ensuite task afin de trouver "Tasks: Run Task"
 
 ![guide-du-contributeur05](/assets/img/post/2019/guide-du-contributeur05.png)
 
-Code vous porpose maintenant une liste de tache a éxécuter
+Code vous propose maintenant une liste de tâche a exécuté
 
 ![guide-du-contributeur06](/assets/img/post/2019/guide-du-contributeur06.png)
 
-Dans l'exemple d'éxécution ci-dessous, nous avons lancer la tache "Docker - Serve".
+Dans l'exemple d'exécution ci-dessous, nous avons lancé la tache "Docker - Serve".
 
 ![guide-du-contributeur07](/assets/img/post/2019/guide-du-contributeur07.png)
 
@@ -202,7 +202,7 @@ De nombreux outils avertissent d’ailleurs lorsque l’on dépasse la longueur 
 
 Pour adopter un style descriptif efficace, on utilise l’impératif présent : add, change, update, remove et non pas changed, removed, etc..
 
-> Veuillez notez que le sujet doit etre toujours en anglais !
+> Veuillez noter que le sujet doit être toujours en anglais !
 
 ## Le corps du message
 
