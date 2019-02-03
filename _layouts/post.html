@@ -77,9 +77,12 @@
                     <span>{{ page.next.title }}</span>
                     <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
                 </section>
-                {% if page.next.cover %}
+                {% if page.next.preview-cover %}
                 <div class="filter"></div>
-                <img src="{{ page.next.cover }}" alt="">
+                <img src="{{ page.next.preview-cover }}" alt="{{ page.next.title }}">
+                {% elsif page.next.post-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.next.post-cover }}" alt="{{ page.next.title }}">
                 {% endif %}
             </div>
             {% endif %}
@@ -91,9 +94,12 @@
                     <span>{{ page.previous.title }}</span>
                     <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
                 </section>
-                {% if page.previous.cover %}
+                {% if page.previous.preview-cover %}
                 <div class="filter"></div>
-                <img src="{{ page.previous.cover }}" alt="">
+                <img src="{{ page.previous.preview-cover }}" alt="{{ page.previous.title }}">
+                {% elsif page.previous.post-cover %}
+                <div class="filter"></div>
+                <img src="{{ page.previous.post-cover }}" alt="{{ page.previous.title }}">
                 {% endif %}
             </div>
             {% endif %}
