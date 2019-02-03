@@ -1,12 +1,12 @@
 - name: Thomas ILLIET
-  avatar: /assets/img/avatar-thomas-illiet.jpg
+  avatar: /assets/img/avatar/thomas-illiet.jpg
   description: ''
   social:
     github: thomas-illiet
     linkedin: thomas-illiet
 
 - name: Etienne Deneuve
-  avatar: /assets/img/avatar-etienne-deneuve.jpg
+  avatar: /assets/img/avatar/etienne-deneuve.jpg
   description: ''
   social:
     github: EtienneDeneuve
@@ -15,7 +15,7 @@
     facebook: etienne.deneuvepro
 
 - name: Matthieu Petite
-  avatar: /assets/img/avatar-matthieu-petite.jpg
+  avatar: /assets/img/avatar/matthieu-petite.jpg
   description: ''
   social:
     github: matthieupetite
