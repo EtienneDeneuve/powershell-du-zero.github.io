@@ -3,8 +3,8 @@ layout: post
 title: Guide du contributeur
 description: Le Guide du contributeur galactique
 date: 2019-01-31
-post-cover: ''
-preview-cover: ''
+post-cover: /assets/img/post/2019/guide-du-contributeur13.png
+preview-cover: /assets/img/post/2019/guide-du-contributeur14.png
 tags: communication
 ---
 
