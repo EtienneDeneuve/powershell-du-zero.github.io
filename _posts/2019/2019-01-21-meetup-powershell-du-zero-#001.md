@@ -3,7 +3,8 @@ layout: post
 title: "Meetup Powershell du Zéro #001"
 date: 2019-01-21
 author: Etienne DENEUVE
-post-cover: /assets/img/meetup-001.png
+post-cover: /assets/img/banner/meetup-cover.png
+preview-cover: /assets/img/banner/meetup-preview.png
 tags: powershell meetup
 redirect_from: /2019/01/21/meetup.html
 ---

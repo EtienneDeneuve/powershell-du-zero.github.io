@@ -3,7 +3,7 @@ layout: post
 title: Gérer les stratégies d’exécution
 date: 2019-01-20
 author: Thomas ILLIET
-post-cover: /assets/img/gerer-les-strategies-dexecution-06.png
+post-cover: /assets/img/post/2019/gerer-les-strategies-dexecution-06.png
 tags: powershell securite gpo
 ---
 
@@ -42,23 +42,23 @@ Mais alors que faire ? Placer votre politique d’exécution en AllSigned et sig
 1. Exécutez **GPMC.msc**.
 2. Sélectionnez l’OU (unité d’organisation) souhaitée, et faites un clic droit pour sélectionner **Create a GPO in this domain, and Link it here…**.
 
-![gerer-les-strategies-dexecution-01](/assets/img/gerer-les-strategies-dexecution-01.png)
+![gerer-les-strategies-dexecution-01](/assets/img/post/2019/gerer-les-strategies-dexecution-01.png)
 
 * Donnez un nom à la nouvelle GPO.
 
-![gerer-les-strategies-dexecution-02](/assets/img/gerer-les-strategies-dexecution-02.png)
+![gerer-les-strategies-dexecution-02](/assets/img/post/2019/gerer-les-strategies-dexecution-02.png)
 
 * Faites un clic droit et sélectionnez **Edit** sur la GPO fraîchement créée.
 
-![gerer-les-strategies-dexecution-03](/assets/img/gerer-les-strategies-dexecution-03.png)
+![gerer-les-strategies-dexecution-03](/assets/img/post/2019/gerer-les-strategies-dexecution-03.png)
 
 * Allez sous l’arborescence **Computer Configuration - Policies - Administrative Templates - Windows Components - Windows PowerShell**.
 
-![gerer-les-strategies-dexecution-04](/assets/img/gerer-les-strategies-dexecution-04.png)
+![gerer-les-strategies-dexecution-04](/assets/img/post/2019/gerer-les-strategies-dexecution-04.png)
 
 * Double cliquez sur le paramètre **Turn on Script Execution**, puis choisissez la stratégie d’exécution souhaitée.
 
-![gerer-les-strategies-dexecution-05](/assets/img/gerer-les-strategies-dexecution-05.png)
+![gerer-les-strategies-dexecution-05](/assets/img/post/2019/gerer-les-strategies-dexecution-05.png)
 
 * Enfin, fermez l’éditeur ...
 

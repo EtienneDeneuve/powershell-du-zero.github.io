@@ -3,7 +3,7 @@ layout: post
 title: Ouverture du blog
 date: 2019-01-19
 author: Thomas ILLIET
-post-cover: /assets/img/ouverture-du-blog-01.png
+post-cover: /assets/img/post/2019/ouverture-du-blog-01.png
 tags: communication
 ---
 
@@ -47,4 +47,4 @@ Venez partager votre savoir-faire sur :
 
 Envoyez-nous un petit mail à l'adresse suivante : [contact@powershell-du-zero.fr](mailto:contact@powershell-du-zero.fr)
 
-![ouverture-du-blog-02](/assets/img/ouverture-du-blog-02.gif)
+![ouverture-du-blog-02](/assets/img/post/2019/ouverture-du-blog-02.gif)
