@@ -43,13 +43,14 @@ Dans cette section nous allons voir comment mettre en place le dépôt (le code)
 
 Nous hébergeons nos dépôts Git sur [Github](https://github.com/) à l'adresse suivante : [https://github.com/Powershell-du-Zero](https://github.com/Powershell-du-Zero)
 
-Bien sûr, vous n'allez pas travailler directement sur le dépôt du Powershell du Zero parce que vous n'avez pas les permissions et c'est une mauvaise pratique. Vous devez doc **forker le dépôt**.
+Travailler sur le dépot du Powershell du Zero n'est pas faisable, il faudrait mettre trop de contributeur et poserait des problemes de sécurité et de gouverannce. Pour proposez votre article, vous devez donc faire un **fork du dépot**.
+
 Un fork est copie du dépôt, permettant de faire ce que bon vous semble sans aucune restriction.
 Pour forker un dépôt vous pouvez utiliser l'interface de Github :
 
 ![guide-du-contributeur01](/assets/img/post/2019/guide-du-contributeur01.png)
 
-Une fois que vous avez fork le projet, Github vous redirigera vers la copie de celui-ci:
+Une fois que vous avez forkez le projet, Github vous redirigera vers la copie de celui-ci:
 
 ![guide-du-contributeur02](/assets/img/post/2019/guide-du-contributeur02.png)
 
@@ -122,7 +123,7 @@ Code est basé sur le même socle technique qu’[Atom](https://atom.io/), mais 
 
 ## Installation
 
-[Télécharge VS Code](https://code.visualstudio.com/) et exécute l’installeur, tout simplement.
+[Téléchargez VS Code](https://code.visualstudio.com/) et exécutez l’installeur, tout simplement.
 
 ## Extensions recommandées
 
