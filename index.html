@@ -42,7 +42,7 @@ header-img: /assets/img/header.jpg
         <div class="post-tags">
           {% if post.tags.size > 0 %}
           {% for tag in post.tags %}
-          <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
+          <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag | url_decode }}</a>
           {% endfor %}
           {% endif %}
         </div>

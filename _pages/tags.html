@@ -16,14 +16,14 @@ permalink: /tags.html
         <li>
         {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
-            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+            <a href="#{{ tag[0] }}" class="tag">{{ tag[0] | url_decode }}</a>
             {% endfor %}
         {% endif %}
         </li>
 
         {% for tag in site.tags %}
         <li>
-            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
+            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] | url_decode }}」</span>
             {% for post in tag[1] %}
             <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
